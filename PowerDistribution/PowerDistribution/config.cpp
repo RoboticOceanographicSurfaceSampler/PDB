@@ -407,6 +407,8 @@ void configureSerialNumber(){
 	//Need to add 8
 	if(UC_LOT_NUMBER == 0x13919 && UC_WAFER_ID == 0x2075)
 		serialNumber = 9;
+	if(UC_LOT_NUMBER == 0x13919 && UC_WAFER_ID == 0x2A3A)
+		serialNumber = 10;
 		
 	#ifdef OUTPUT_LOT_AND_WAFER_INFO
 		SendStringPC((char *)"#[Lot ID Number: ");
